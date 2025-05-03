@@ -6,12 +6,12 @@ import numpy as np
 
 from harris import detect_harris_corners
 from matcher import match_features
-from depth import compute_depth_map, normalize_depth_map, visualize_depth_map
+from depth import compute_depth_map, normalize_depth_map
 from utils import draw_corners, display_and_save_depth_map, save_corners_to_ascii,save_matches_and_depth, draw_matches,save_image
 
 #reading both the images
-left_images = glob.glob("images/Moebius_left.*")
-right_images = glob.glob("images/Moebius_right.*")
+left_images = glob.glob("images/Moebius_left_corrected.*")
+right_images = glob.glob("images/Moebius_right_corrected.*")
 
 
 left_path = left_images[0]
